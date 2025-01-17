@@ -1,6 +1,6 @@
 module plog
 
-go 1.23.4
+go 1.18
 
 require github.com/shirou/gopsutil v2.21.11+incompatible
 
