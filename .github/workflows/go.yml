@@ -26,11 +26,3 @@ jobs:
 
     - name: Test
       run: go test -v ./...
-
-      # 使用 goreleaser 进行生成多平台代码并且上传到 github release 进行发布
-    - name: Create release on GitHub
-      uses: docker://goreleaser/goreleaser:latest
-      with:
-        args: release
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
