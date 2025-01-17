@@ -55,7 +55,7 @@ func main() {
 	fmt.Printf("开始监控进程 %d\n", *pid)
 	p, err := process.NewProcess(int32(*pid))
 	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "PID [%s] 不存在\n", pid)
+		_, _ = fmt.Fprintf(os.Stderr, "PID [%d] 不存在\n", pid)
 		return
 	}
 	_, _ = fmt.Fprintf(out, "ts, CPU(%%), Mem(KB)\n")

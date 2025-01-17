@@ -5,3 +5,4 @@ target/
 plog.exe
 plog
 data.csv
+dist/
