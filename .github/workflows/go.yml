@@ -33,4 +33,4 @@ jobs:
       with:
         args: release
       env:
-        GITHUB_TOKEN: ${{secrets.ACTION_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
